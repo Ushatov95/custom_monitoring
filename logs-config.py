@@ -27,7 +27,7 @@ filename = "error.log"
 if not os.path.isfile(filename):
     # File doesn't exist, so create it
     with open(filename, 'w') as file:
-        file.write("")
+        file.write("Logging file successfully created")
 
 # Configure the logging module to write to a file
 logging.basicConfig(filename='error.log', level=logging.ERROR)
